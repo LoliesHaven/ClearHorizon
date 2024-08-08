@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Wallet Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #4d0885;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            margin-bottom: 50px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+        .wallet-homepage {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .wallet-homepage h1 {
+            background-color: #d1b3ff;
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            width: 70%;
+        }
+        .account-info {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #d1b3ff;
+            padding: 30px;
+            border-radius: 20px;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .account-info h2, .account-info h3 {
+            margin-bottom: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="transfer.html">Pay & Transfer</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="topup.html">Top Up</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <div class="wallet-homepage">
+        <img src="digitalwallet.png" alt="Digital Wallet Logo" style="width: 150px; height: 150px;">
+        <h1>Welcome to Your Digital Wallet</h1>
+    </div>
+    <div class="account-info">
+        <h2>Account Number: 1234 5678 9012 3456</h2>
+        <h3>Bank Name: Clearhorizon Bank</h3>
+        <h3>Account Balance: $5,000.00</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8748cf;
+        }
+        nav {
+            background-color: #333;
+            padding: 1em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .home-page {
+            text-align: center;
+            margin: 2em auto;
+            padding: 40px; /* Increased padding to make container longer */
+            max-width: 1200px;
+            background-color: #D3BCE3;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background-color: #FDF5E6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            padding: 20px;
+            margin: 1em;
+            text-align: center;
+            height: 350px; /* Increased height for larger content */
+        }
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .service-card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .service-card button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="financialservices.html">Financial Services</a></li>
+            <li><a href="blog.html">Blog/Resources Center</a></li>
+            <li><a href="wallet.html">Digital Wallet</a></li>
+            <li><a href="coverpage.html">Log out</a></li>
+        </ul>
+    </nav>
+    <div class="home-page">
+        <img src="logo.png" alt="Logo" style="width: 150px; height: 150px;">
+        <h1>Clearhorizon Finance Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="financial.png" alt="Financial Services Logo">
+                <h2>Financial Services</h2>
+                <p>Advise what are the best financial services such as investment services for better wealth management.</p>
+                <a href="financialservices.html"><button>Click Here</button></a>
+            </div>
+            <div class="service-card">
+                <img src="blog.png" alt="Blog/Resources Center Logo">
+                <h2>Blog/Resources Centre</h2>
+                <p>If you have any questions or are curious about anything, visit this resource center for interesting articles or search for any articles to answer your queries.</p>
+                <a href="blog.html"><button>Click Here</button></a>
+            </div>
+            <div class="service-card">
+                <img src="digitalwallet.png" alt="Digital Wallet Logo">
+                <h2>Digital Wallet</h2>
+                <p>Write here a key feature of the app or software that is being advertised here.</p>
+                <a href="wallet.html"><button>Click Here</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

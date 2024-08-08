@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="wallethomepage.html">Home</a></li>
+            <li><a href="transfer.html">Pay & Transfer</a></li>
+            <li><a href="transactions.html">Transactions</a></li>
+            <li><a href="topup.html">Top Up</a></li>
+        </ul>
+    </nav>
+    <div class="insights-page">
+        <img src="digitalwallet.png" alt="Logo" style="width: 150px; height: 150px;">
+        <h1>Insights for ClearHorizon Wallet</h1>
+
+        <div class="chart-container">
+            <canvas id="insightsChart"></canvas>
+        </div>
+        <div class="transaction-categories">
+            <div class="outgoing">
+                <h3>Outgoing Transactions</h3>
+                <p>Category: Shopping, Amount: $300</p>
+                <p>Category: Entertainment, Amount: $120</p>
+            </div>
+            <div class="incoming">
+                <h3>Incoming Transactions</h3>
+                <p>Category: Salary, Amount: $2,500</p>
+                <p>Category: Bonus, Amount: $500</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('insightsChart').getContext('2d');
+        var insightsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Amount ($)',
+                    data: [1200, 1500, 1700, 1300, 1600],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
